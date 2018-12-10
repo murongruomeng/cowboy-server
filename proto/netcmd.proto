@@ -1,0 +1,8 @@
+syntax = "proto3";
+package net;
+
+enum NetCMD {
+    C2S_MSG_HEART = 0;
+    C2S_MSG_LOGIN = 1001;
+    S2C_MSG_LOGIN = 1002;
+}

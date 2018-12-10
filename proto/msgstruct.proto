@@ -1,0 +1,18 @@
+syntax = "proto3";
+package net;
+
+message c2s_login {
+    string uid =1;
+    string sessionkey = 2;
+}
+
+message s2c_login {
+    uint32 errcode = 1;
+    string uid = 2;
+    string  name = 3;
+    int64 sex = 4;
+    int64 diamond = 5;
+    int64 coin = 6;
+    uint32 level = 7;
+    bytes head = 8;
+}

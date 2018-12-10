@@ -1,0 +1,10 @@
+syntax = "proto3";
+package net;
+import "netcmd.proto";
+
+message packet {
+    int32 len = 1;
+    NetCMD cmd = 2;
+    int32 pblen = 3;
+    bytes pbbody = 4;
+}
